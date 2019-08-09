@@ -1,24 +1,17 @@
-# README
+# flockbot.api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+The Flockbot.api project is a simple Rails application that wraps the
+[Flockbot](https://github.com/setonparish/flockbot) gem and expose endpoints
+so that [Flocknote](https://www.flocknote.com/) can finally work with
+[Zapier](https://www.zapier.com).
 
-* Ruby version
+Note that the Zapier integration is private and only exposed to Seton Parish.
+This project is being shared for anyone that might have similar needs.
 
-* System dependencies
+## End Points Exposed
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* `GET /ping` - returns an http `200` status
+* `GET /api/groups` - returns list of Flocknote groups
+* `POST /api/group_participation` - adds user to a specific Flocknote group

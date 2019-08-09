@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get "ping" => lambda { |env| [200, { "Content-Type" => "application/json" }, ["{}"]] }
+
   namespace :api do
-    resource :users, only: [] do
-      get :ping
-    end
+    resources :groups, only: [:index]
+    resource :group_participation, only: [:create]
   end
 end
