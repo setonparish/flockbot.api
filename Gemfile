@@ -9,7 +9,7 @@ gem "listen"
 gem "pg", ">= 0.18", "< 2.0"
 gem "pry"
 gem "puma", "~> 3.11"
-gem "rails", "~> 5.2.3"
+gem "rails", "~> 6.0.0"
 gem "uglifier", ">= 1.3.0"
 
 group :development do
