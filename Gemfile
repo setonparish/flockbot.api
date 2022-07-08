@@ -6,6 +6,9 @@ ruby "3.1.2"
 gem "bootsnap"
 gem "flockbot", "~> 0.5.0", git: "https://github.com/setonparish/flockbot"
 gem "listen"
+gem "net-imap", require: false
+gem "net-pop", require: false
+gem "net-smtp", require: false
 gem "pg"
 gem "pry"
 gem "puma"
