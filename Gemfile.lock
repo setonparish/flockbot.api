@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/setonparish/flockbot
-  revision: 42a05e22491935e1558a3e10790a5b02e10ceb45
+  revision: 429061cf9c5aef9a7c86e31e384eb2bc8fde114c
   specs:
-    flockbot (0.4.0)
+    flockbot (0.5.0)
       faraday
       faraday-cookie_jar
       faraday_middleware
@@ -218,7 +218,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  flockbot (~> 0.4.0)!
+  flockbot (~> 0.5.0)!
   listen
   pg
   pry
